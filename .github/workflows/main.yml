@@ -1,5 +1,6 @@
 name: "Assign assignees"
-on: pull_request
+on:
+  pull_request
 
 jobs:
   test:
@@ -11,7 +12,7 @@ jobs:
           FIRST_NAME: Mona
           middle_name: The
           Last_Name: Octocat
-#   automatic_assignee:
+    #   automatic_assignee:
 #     runs-on: ubuntu-latest
 #     steps:
 #       - name: Automatic Assignee
