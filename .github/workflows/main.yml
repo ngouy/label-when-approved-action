@@ -2,11 +2,17 @@ name: "Assign assignees"
 on: pull_request
 
 jobs:
-  automatic_assignee:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Automatic Assignee
-        uses: ngouy/automatic-assignee@master
-        env:
-         REVIEWERS_UNMODIFIED_EXIT_CODE: "0"
-         GITHUB_TOKEN: "3be3216cea8dfce164847e49bb27de7ce2edf55f"
+ - name: Hello world
+    run: echo Hello world ${FIRST_NAME} ${middle_name} ${Last_Name}!
+    env:
+      FIRST_NAME: Mona
+      middle_name: The
+      Last_Name: Octocat
+#   automatic_assignee:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Automatic Assignee
+#         uses: ngouy/automatic-assignee@master
+#         env:
+#          REVIEWERS_UNMODIFIED_EXIT_CODE: "0"
+#          GITHUB_TOKEN: "3be3216cea8dfce164847e49bb27de7ce2edf55f"
