@@ -1,6 +1,7 @@
 name: "Assign assignees"
 on:
-  pull_request
+  pull_request:
+    types: [opened, reopened]
 
 jobs:
   test:
